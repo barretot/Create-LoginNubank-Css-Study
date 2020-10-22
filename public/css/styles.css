@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.846;
+  font-family: 'Roboto', sans-serif;
+}
+
+p,
+input,
+button,
+a,
+span {
+  font-weight: 600;
+}
+
+#logo {
+  display: none;
+}
+
+#container {
+  background-color: #81259d;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#container-login {
+  background-color: #ffff;
+  border-radius: 10px;
+
+  height: 36rem; /* Unidades de medidas rem relativa a o tamanho da font do elemento pai, calculo = 576px / 16 = 36rem */
+  width: 22rem; /* Unidades de medidas rem 384px / 16 = 24.3rem */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-login .form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph-header .text-form {
+  position: relative;
+  color: #222222;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.form-login .input-groups {
+  position: relative;
+  top: 40px;
+}
+
+.label-inputs {
+  color: #404040;
+  border-color: #a0a0a0;
+  text-shadow: none;
+
+  position: relative;
+  margin: auto;
+  top: 10px;
+  display: flex;
+}
+
+.password-label {
+  margin-top: 1.8rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px dotted #6b6564;
+  width: 18rem;
+}
+
+.input-groups input:first-child {
+  position: relative;
+
+  margin-bottom: 5rem;
+}
+
+.btn-continue {
+  position: relative;
+  top: 60px;
+  height: 4.3rem;
+  width: 15.6rem;
+  margin-bottom: 5rem;
+  border-radius: 6px;
+}
+
+.links-nav a {
+  text-decoration: none;
+}
+
+.links-nav a > span {
+  color: #8d3dc8;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #8d3dc8;
+  transition: color 0.3s;
+}
+
+.links-nav a > span:hover {
+  color: #000000;
+}
+
+/* Desktop version */
+@media (min-width: 600px) {
+  #container-login {
+    background-color: #ffff;
+    border-radius: 10px;
+
+    height: 34.4rem; /* Unidades de medidas rem relativa a o tamanho da font do elemento pai, calculo = 576px / 16 = 36rem */
+    width: 25.5rem; /* Unidades de medidas rem 384px / 16 = 24.3rem */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo {
+    display: block;
+    position: relative;
+    top: 23px;
+    right: 340px;
+    height: 80px;
+  }
+
+  .paragraph-header .text-form {
+    position: relative;
+    color: #222222;
+    margin-top: 3.8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .btn-continue {
+    position: relative;
+    top: 54px;
+    height: 4.3rem;
+    width: 18rem;
+    margin-bottom: 5rem;
+    border-radius: 6px;
+  }
+  .links-nav a > span {
+    position: relative;
+    bottom: 23px;
+  }
+}
+
+@media (min-width: 650px) {
+  #container-login {
+    background-color: #ffff;
+    border-radius: 10px;
+
+    height: 32.4rem; /* Unidades de medidas rem relativa a o tamanho da font do elemento pai, calculo = 576px / 16 = 36rem */
+    width: 25.5rem; /* Unidades de medidas rem 384px / 16 = 24.3rem */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
